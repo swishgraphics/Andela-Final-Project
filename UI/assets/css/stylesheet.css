@@ -1,0 +1,674 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+    color: #1b1b1b;
+    background-color: #f1efef;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+	width: 100%;
+	height: 65px;
+	display: block;
+	background-color: #f1efef;
+}
+
+.main-header {
+	width: 80%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.header-logo {
+	height: 100%;
+	display: table;
+	float:left;
+}
+
+.header-logo h1 {
+	color: #ffbb00;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: sans-serif;
+	font-size: 32px;
+	font-weight:900;
+}
+
+.header-logo h1 span {
+	font-weight: 100;
+	color: #3e3c3c;
+}
+
+.navigation {
+	float: right;
+	height: 100%;
+}
+
+.navigation li {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 20px;
+}
+
+.navigation li a {
+	display: table-cell;
+	vertical-align: middle;
+	color: #3e3c3c;
+	height: 100%;
+	font-family: 'Mongolian Baiti';
+	font-size: 20px;
+}
+
+/*home body*/
+
+.home-banner {
+	width: 100%;
+    height: calc(100vh - 65px);
+    background-image: 
+    linear-gradient(
+            rgba(31, 30, 28, 0.565),
+            rgba(31, 30, 28, 0.565)
+        ),
+    url("../images/712682.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.home-banner-text {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-banner h2 {
+	font-family: 'Mongolian Baiti';
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home-banner h2 span {
+	font-weight: 900;
+    color: #ffbb00;
+}
+
+.home-banner p {
+	font-family: 'Mongolian Baiti';
+	font-size: 14px;
+	font-weight: 100;
+	text-align: center;
+    color: floralwhite;
+    text-shadow: 1px 1px 1px #808080;
+
+}
+
+.home-banner-button {
+	text-align:center;
+    padding-top: 50px;
+}
+
+.home-banner-button div {
+    display: block;
+    padding: 30px 50px;
+}
+
+.home-banner-button a {
+    text-decoration: none;
+    background-color: #ffbb00;
+    color: #1b1b1b;
+    font-size: 20px;
+    padding: 10px 30px;
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.home-banner-button a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffbb00;
+}
+
+
+/*home section 1*/
+.home-sec-1 {
+    padding: 30px;
+    margin-top: 100px;
+    padding-bottom: 0;
+}
+
+.home-section-1 {
+    padding: 0px 50px;
+    padding-top: 250px;
+}
+
+.home-sec-1 h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: #0c0c0c;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: Georgia;
+}
+
+.home-section-1 div {
+    width: 85%;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home-section-1 h1 {
+    font-size: 18px;
+    margin: 10px;
+    font-family: Georgia;
+}
+
+.home-section-1 p {
+    margin: 20px 10px;
+}
+
+.home-section-1 a {
+    color: #ffbb00;
+    margin: 30px;
+}
+
+.home-section-1 i {
+    color: #ffbb00;
+    padding-bottom: 10px;
+}
+
+
+/*login page*/
+.login-form {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-image: 
+    linear-gradient(
+        to right,
+        rgba(145, 145, 145, 0.322),
+        rgba(145, 145, 145, 0.322)
+    ),
+    url("../images/94414_2800x1867.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-box {
+    width: 50%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -45%);
+    padding: 35px 40px;
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0px 30px;
+    text-align: center;
+    position: relative;
+    font-size: 26px;
+    color: #ffbb00;
+}
+
+.login-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    padding-top: 20px;
+    font-family: 'Mongolian Baiti';
+}
+
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    padding: 3px 0;
+    }
+
+.login-box input[type='text'], input[type='password'], input[type='date'] {
+    border: none;
+    border-bottom: 1px solid #ffbb00;
+    background: transparent;
+    outline: none;
+    height: 30px;
+}
+
+.login-box input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ffbb00;
+    color: #1b1b1b;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 16px;
+    color: gold;
+}
+
+
+/* Signup page*/
+.signup-form {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-image: 
+    linear-gradient(
+        rgba(31, 30, 28, 0.5),
+        rgba(31, 30, 28, 0.5)
+    ),
+    url("../images/396959-2300x1294.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup-box {
+    width: 62%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-top: 35px;
+}
+
+.signup-box h1 {
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 5px;
+    color: gold;
+}
+
+.signup-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    padding-top: 10px;
+    font-family: 'Mongolian Baiti';
+}
+
+
+.signup-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 3px 0;
+    }
+
+    .signup-box input[type='text'], input[type='email'], input[type='password'] {
+        border: none;
+        border-bottom: 1px solid goldenrod;
+        background: transparent;
+        outline: none;
+        height: 30px;
+    }
+
+.signup-box input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: goldenrod;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.signup-box a {
+    text-decoration: none;
+    font-size: 16px;
+    color: gold;
+}
+/*admin request*/
+.request-table {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+.table {
+    width: inherit;
+}
+
+.table tr {
+    width: inherit;
+    text-align: center;
+}
+.table th {
+    background-color: #f5ab0c;
+}
+
+.table, th, td {
+    border: 1px solid rgb(102, 102, 102);
+    border-collapse: collapse;
+}
+
+.table th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table caption {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #f5ab0c;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.request-btn {
+    padding: 20px 10px;
+
+}
+
+.request-btn button {
+    padding: 16px;
+    background-color: #f5ab0c;
+    border: 1px solid none;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    width: calc(100% - 60px);
+    padding: 20px 30px;
+    background-color: #3e3c3c;
+    overflow: hidden;
+}
+
+footer ul {
+	width: inherit;
+	float: left;
+    padding-left: 20px;
+    text-align: left;
+}
+
+footer ul li {
+	height: 100%;
+	display: block;
+    padding: 5px 20px;
+    
+}
+
+footer ul li a {
+	color: white;
+	font-family: 'Mongolian Baiti';
+	font-size: 18px;
+	line-height: 30px;
+	}
+
+.footer-sm {
+    text-align: right;
+    color: whitesmoke;
+
+}
+
+.footer-sm i {
+    display: block;
+    margin: 10px;
+}
+
+.copyright {
+    text-align: left;
+    color: whitesmoke;
+    padding-left: 40px;
+}
+
+.copyright span {
+    color: #ffbb00;
+    font-size: 18px;
+}
+
+
+@media only screen and (min-width: 890px) {
+    .home-banner {
+        width: 100%;
+        height: calc(100vh - 65px);
+        background-image: 
+        linear-gradient(
+            rgba(31, 30, 28, 0.565),
+            rgba(31, 30, 28, 0.565)
+        ),
+        url("../images/712682.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .home-banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-banner h2 {
+        font-family: 'Mongolian Baiti';
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .home-banner h2 span {
+        font-weight: 900;
+        color: #ffbb00;
+    }
+    
+    .home-banner p {
+        font-family: 'Mongolian Baiti';
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+        color: floralwhite;
+        text-shadow: 2px 2px 2px #808080;
+    
+    }
+    
+    .home-banner-button {
+        text-align:center;
+        padding-top: 120px;
+    }
+    
+    .home-banner-button div {
+        display: inline-block;
+        padding: 0 50px;
+    }
+    
+    .home-banner-button a {
+        text-decoration: none;
+        background-color: #ffbb00;
+        color: #1b1b1b;
+        font-size: 24px;
+        padding: 15px 50px;
+        font-weight: 700;
+        border-radius: 100px;
+    }
+
+    /* home section 1*/
+    .home-sec-1 {
+        padding: 30px;
+        margin-top: 50px;
+        padding-bottom: 0;
+    }
+    
+    .home-section-1 {
+        padding: 50px 70px;
+        padding-top: none;
+    }
+    
+    .home-sec-1 h1 {
+        text-align: center;
+        padding-top: 30px;
+        color: #0c0c0c;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: Georgia;
+    }
+    
+    .home-section-1 div {
+        width: 30%;
+        display: inline-block;
+        position: none;
+        left: 0%;
+        transform: none;
+        text-align: center;
+        padding: 50px 15px;
+    }
+    
+    .home-section-1 h1 {
+        font-size: 20px;
+        margin: 10px;
+        font-family: Georgia;
+    }
+
+    /*login page*/
+    
+    .login-box {
+        width: 380px;
+        height: 460px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        top: 55%;
+        left: 45%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 20px 40px;
+    }
+    
+    .login-box h1 {
+        margin: 0;
+        padding: 0 30px;
+        text-align: center;
+        font-size: 30px;
+        color: #ffbb00;
+    }
+    
+    .login-box p {
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        padding-top: 20px;
+        font-family: 'Mongolian Baiti';
+    }
+    
+    /* signup page*/
+    .signup-box {
+        width: 350px;
+        height: 520px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        top: 50%;
+        left: 25%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 20px 30px;
+        margin-top: 35px;
+    }
+    
+    .signup-box h1 {
+        margin: 0;
+        padding: 0 30px;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 5px;
+        color: gold;
+    }
+    
+    .signup-box p {
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        padding-top: 10px;
+        font-family: 'Mongolian Baiti';
+    }
+
+    /*footer*/
+    footer {
+        width: calc(100% - 60px);
+        height: 100%;
+        padding: 20px 30px;
+        background-color: #3e3c3c;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    
+    footer ul {
+        width: inherit;
+        float: left;
+        padding-left: 20px;
+        text-align: center;
+    }
+    
+    footer ul li {
+        height: 100%;
+        display: inline-block;
+        padding: 0 20px;
+        text-align: center;
+        
+    }
+    
+    footer ul li a {
+        color: white;
+        font-family: 'Mongolian Baiti';
+        font-size: 18px;
+        line-height: 30px;
+        }
+    
+    .footer-sm {
+        padding-right: 40px;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .footer-sm i {
+        display: inline-block;
+        margin: 20px 50px;
+    }
+    
+    .copyright {
+        text-align: center;
+        color: whitesmoke;
+        padding-right: 80px;
+    }
+    
+}
