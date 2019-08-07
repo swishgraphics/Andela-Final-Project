@@ -71,3 +71,23 @@ describe('POST addRequest', () => {
       });
   });
 });
+
+//testing to update a request
+describe('PUT:id updateRequest', () => {
+  it('should check for update', done => {
+    const id = 3;
+    chai
+      .request(app)
+      .put(`/api/requests/${id}`)
+      .send({
+        name: 'madison wells',
+        email: 'madwells@gmail.com',
+        date: '02-07-2019'
+      })
+      .end((err, res) => {
+        res.should.have.status(200);
+        res.body.should.be.a('object');
+        done();
+      });
+  });
+});
