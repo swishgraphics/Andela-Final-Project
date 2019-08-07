@@ -1,22 +1,25 @@
-const todos = [
+const requests = [
   {
-    id: 31,
-    name: 'Play FIFA',
-    created_at: new Date(),
-    completed: false
+    id: 1,
+    name: 'Balil Adeeso',
+    request: 'Broken Frontlight',
+    date: new Date(),
+    status: 'Completed'
   },
   {
-    id: 22,
-    name: 'Clean my room',
-    created_at: new Date(),
-    completed: false
+    id: 2,
+    name: 'John Doe',
+    request: 'Bad Tyre',
+    date: new Date(),
+    status: 'Completed'
   },
   {
-    id: 12,
-    name: 'Eat beans',
-    created_at: new Date(),
-    completed: true
+    id: 3,
+    name: 'Vanessa Watson',
+    request: 'Paint Job',
+    date: new Date(),
+    status: 'Completed'
   }
 ];
 
-export default todos;
+export default requests;

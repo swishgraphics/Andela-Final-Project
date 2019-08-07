@@ -1,10 +1,10 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index"
+    "start": "nodemon --exec babel-node src/index",
+    "test": "mocha --require @babel/register src/tests/tests.js"
   },
   "keywords": [
     "api"
@@ -23,6 +23,10 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
     "nodemon": "^1.19.1"
-  }
+  },
+  "description": ""
 }

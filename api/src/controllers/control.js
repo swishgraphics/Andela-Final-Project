@@ -1,85 +1,80 @@
 import uuid from 'uuid';
 
-import todos from '../DumData/data';
+import requests from '../DumData/data';
 
-class TodoController {
-  // Get all todos
-  static getAllTodos(req, res) {
-    res.json(todos);
+class RequestController {
+  // Get all requests
+  static getAllRequests(req, res) {
+    res.json(requests);
   }
 
   // Get todo br id
-  static getTodoById(req, res) {
+  static getRequestById(req, res) {
     // eslint-disable-next-line radix
     const id = parseInt(req.params.id);
-    const todo = todos.find(each => each.id === id);
-    if (!todo) {
+    const request = requests.find(each => each.id === id);
+    if (!request) {
       return res
         .status(400)
-        .json({ message: `Todo with id ${id} cannot be found` });
+        .json({ message: `Request with id ${id} cannot be found` });
     }
-    return res.json({ todo });
+    return res.json({ request });
   }
 
-  // Post new todo
-  static postTodo(req, res) {
-    const newTodos = {
-      // eslint-disable-next-line no-undef
+  // Post new request
+  static postRequest(req, res) {
+    const newRequests = {
       id: uuid.v4(),
       name: req.body.name,
-      email: req.body.email,
-      created_at: new Date(),
-      // eslint-disable-next-line comma-dangle
-      completed: 'false'
+      request: req.body.request,
+      date: new Date(),
+      status: 'Completed'
     };
-    if (!newTodos.name || !newTodos.email) {
-      return res.json({ message: 'please input a valid name or email' });
+    if (!newRequests.name || !newRequests.request) {
+      return res.json({ message: 'please input a valid name or request' });
     }
-    todos.push(newTodos);
+    requests.push(newRequests);
 
-    return res.json({ todos });
+    return res.json({ requests });
   }
 
-  // Update todo
-  static updateTodo(req, res) {
+  // Update requests
+  static updateRequest(req, res) {
     // eslint-disable-next-line radix
     const id = parseInt(req.params.id);
-    const updatetodo = todos.find(each => each.id === id);
-    if (updatetodo) {
-      const newTodo = req.body;
-      todos.forEach(todo => {
-        if (todo.id === id) {
-          todo.name = newTodo.name ? newTodo.name : todo.name;
-          todo.email = newTodo.email ? newTodo.email : todo.email;
-          todo.created_at = newTodo.created_at
-            ? newTodo.created_at
-            : todo.created_at;
+    const updaterequest = requests.find(each => each.id === id);
+    if (updaterequest) {
+      const newRequest = req.body;
+      requests.forEach(request => {
+        if (request.id === id) {
+          request.name = newRequest.name ? newRequest.name : request.name;
+          request.date = newRequest.date ? newRequest.date : request.date;
 
-          return res.json({ message: 'update successful', todos });
+          return res.json({ message: 'update successful', requests });
         }
       });
     }
     return res
       .status(400)
-      .json({ message: `Todo with id ${id} cannot be found` });
+      .json({ message: `Request with id ${id} cannot be found` });
   }
 
-  // Delete todo
-  static deleteTodo(req, res) {
+  // Delete request
+  static deleteRequest(req, res) {
     // eslint-disable-next-line radix
     const id = parseInt(req.params.id);
-    const newTodos = todos.find(each => each.id === id);
-    if (newTodos) {
+    const newRequests = requests.find(each => each.id === id);
+    if (newRequests) {
       return res.json({
-        message: 'Todo deleted',
+        message: 'Request deleted',
         // eslint-disable-next-line comma-dangle
-        todos: todos.filter(todo => todo.id !== id)
+        requests: requests.filter(request => request.id !== id)
       });
     }
     return res
       .status(404)
-      .json({ message: `Todo with id ${id} cannot be found` });
+      .json({ message: `Request with id ${id} cannot be found` });
   }
 }
 
-export default TodoController;
+export default RequestController;

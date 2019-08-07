@@ -1,22 +1,22 @@
 import express from 'express';
 
-import TodoController from '../controllers/control';
+import RequestController from '../controllers/control';
 
 const router = express.Router();
 
 // get all todos
-router.get('/api/todos', TodoController.getAllTodos);
+router.get('/api/requests', RequestController.getAllRequests);
 
 // get todos by id
-router.get('/api/todos/:id', TodoController.getTodoById);
+router.get('/api/requests/:id', RequestController.getRequestById);
 
 // create new todo
-router.post('/api/todos', TodoController.postTodo);
+router.post('/api/requests', RequestController.postRequest);
 
 // update request
-router.put('/api/todos/:id', TodoController.updateTodo);
+router.put('/api/requests/:id', RequestController.updateRequest);
 
 // Delete Todo
-router.delete('/api/todos/:id', TodoController.deleteTodo);
+router.delete('/api/requests/:id', RequestController.deleteRequest);
 
 export default router;
